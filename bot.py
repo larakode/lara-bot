@@ -1,7 +1,8 @@
+import os
 from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, filters, ContextTypes
 
-Token = "8514363629:AAEjHDFCtAxeFgctSsrhsryIgrgQqKWDQeY"
+Token = os.getenv("8514363629:AAEjHDFCtAxeFgctSsrhsryIgrgQqKWDQeY")
 async def reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = update.message.text.lower()
 
